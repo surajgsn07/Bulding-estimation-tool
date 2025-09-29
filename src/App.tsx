@@ -7,6 +7,7 @@ import ProjectList from './pages/ProjectList';
 import ProjectDetail from './pages/ProjectDetail';
 import { NotificationProvider } from './contexts/NotificationContext';
 import NotificationContainer from './components/NotificationContainer';
+import Login from './pages/Login';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <main className="container mx-auto px-4 py-8">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/login" element={<Login />} />
               <Route path="/estimate" element={<EstimationForm />} />
               <Route path="/projects" element={<ProjectList />} />
               <Route path="/projects/:id" element={<ProjectDetail />} />
